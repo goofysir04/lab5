@@ -15,12 +15,10 @@ function initializePage() {
 
 	$(".friends h3 a").click(function(e){
 	e.preventDefault();
-	var name = anagrammedName($(this).text());
-	$(this).text(name);
+	$(this).text(anagrammedName($(this).text()));
 
 });
 
-	console.log(name);
 }
 
 function anagrammedName(name) {
