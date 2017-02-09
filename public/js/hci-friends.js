@@ -13,7 +13,7 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 
-	$("#fName").click(function(e){
+	$(".friends h3 a").click(function(e){
 	e.preventDefault();
 	var name = anagrammedName($(this).text());
 	$(this).text(name);
